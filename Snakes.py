@@ -149,7 +149,6 @@ def game_loop():
                 if score > int(hiscore):
                     hiscore = score
 
-            # gameWinndow.fill(white)
             gameWinndow.fill((250, 250, 150))
             text_screen("Score " + str(score) + "  Highscore: " + str(hiscore),red,5,5)
             pygame.draw.rect(gameWinndow, red, [food_x, food_y, snake_size,snake_size])
@@ -176,4 +175,3 @@ def game_loop():
     quit()
 
 welcome_screen()
-# game_loop()
